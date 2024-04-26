@@ -11,7 +11,7 @@ def imshow(title="Image", image=None, size=10):
     plt.title(title)
     plt.show()
 
-muhammed_image = face_recognition.load_image_file("C:/Users/Muhammed Kartal/Desktop/photos/deneme18.png")
+muhammed_image = face_recognition.load_image_file("Images/actualPhoto")
 muhammed_face_encoding = face_recognition.face_encodings(muhammed_image)[0]
 
 known_face_encodings = [
@@ -26,7 +26,7 @@ face_encodings = []
 face_names = []
 process_this_frame = True
 
-frame = cv2.imread("C:/Users/Muhammed Kartal/Desktop/photos/deneme6.png")
+frame = cv2.imread("Images/target/Photo")
 
 rgb_frame = frame[:, :, ::-1]
 
