@@ -38,12 +38,10 @@ data = {
 
     frame = cv2.imread("Images/target/Photo")
 }
-
 ```
 
 Run the Script: Execute the script to start the video capture and face recognition process.
 
 ```
  python face_recognition.py
- 
 ```
