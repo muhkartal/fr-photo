@@ -32,7 +32,7 @@ Prepare Your Images:
 Place the image of the person to be recognized in the Images/actualPhoto directory.
 Place the target image (where faces will be detected and recognized) in the Images/target/Photo directory.
 
-
+```
 data = {
     image = face_recognition.load_image_file("Images/actualPhoto")
 
