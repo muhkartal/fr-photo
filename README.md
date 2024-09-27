@@ -1,47 +1,18 @@
-# Face-Recognition-wLive
+# Face Recognition System with Streamlit
 
-## Face Recognition with OpenCV and Face_Recognition
+Welcome to the Face Recognition System built using Streamlit and OpenCV! This project offers an interactive interface to register new faces and recognize existing faces from uploaded images. It leverages the powerful face_recognition library, making it easy to build robust facial recognition applications.
 
-This repository contains a Python script that leverages OpenCV and the face_recognition library to identify faces in an image. The script performs face detection and recognition, highlighting identified faces and displaying their names and confidence scores.
+![alt text](images/main.png)
 
-### Key Features
+### Features
 
-* Face Detection: Identifies faces in an image using a pre-trained model.
-* Face Recognition: Compares detected faces with known face encodings to recognize individuals.
-* Visual Output: Displays the results with bounding boxes around faces and labels indicating the recognized name and confidence score.
+- Register Face: Upload an image of a new face and assign a name to it. The system will store the face encoding for future recognition.
+- Recognize Face: Upload an image, and the system will detect and recognize registered faces, displaying names and confidence levels.
+- Real-time Feedback: Receive instant feedback on registration and recognition operations.
+- Simple and Intuitive UI: Easy-to-use interface with a clear workflow to interact with the system.
 
-### Requirements
+📂 Project Structure
 
-⚹ face_recognition
-⚹ opencv-python
-⚹ numpy
-⚹ matplotlib
-
-
-You can install these dependencies using pip:
-
-```
-pip install face_recognition opencv-python numpy matplotlib
-
-```
-
-### Usage
-
-Prepare Your Images:
-
-Place the image of the person to be recognized in the Images/actualPhoto directory.
-Place the target image (where faces will be detected and recognized) in the Images/target/Photo directory.
-
-```
-data = {
-    image = face_recognition.load_image_file("Images/actualPhoto")
-
-    frame = cv2.imread("Images/target/Photo")
-}
-```
-
-Run the Script: Execute the script to start the video capture and face recognition process.
-
-```
- python face_recognition.py
-```
+<p align="center">  
+<img src="images/image.png" alt="alt text" width="300" height="100" />
+</p>
