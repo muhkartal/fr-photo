@@ -1,0 +1,5 @@
+Python 3.7
+Streamlit
+OpenCV
+face_recognition
+PIL (Pillow)
